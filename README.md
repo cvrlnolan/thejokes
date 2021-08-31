@@ -1,34 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Jokes
 
-## Getting Started
+A Next.js application that fetches and displays data from the public [JokeAPI](https://sv443.net/jokeapi/v2/) service provider.
 
-First, run the development server:
+## Description
+
+The application fetches data about jokes which can customized according to their category, flagged topics or searched string value and displays the results to the frontend user.
+
+## Installation
+
+1. To get this project files locally on your machine, you can clone this repository by running the following command on your terminal or command line:
 
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/cvrlnolan/thejokes
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install all the dependency packages found in the `package.json` file by running `yarn install` or `npm install` from the project root directory.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+3. To start the development server of the application, run `npm run dev` or `yarn dev`. This should log some start-up application information & display the development server url: `http://localhost:3000`. Visit http://localhost:3000 to view your application.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Usage
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### General
 
-## Learn More
+This application was built reflecting the MVC architecture and the main dependencies(all found in the `package.json`) of the application are organised as so:
 
-To learn more about Next.js, take a look at the following resources:
+- Front-end User Interface(UI): [PrimeReact](https://primefaces.org/primereact/)
+- Backend Integration: [NextJS API](https://nextjs.org/docs/api-routes/introduction) (basically [NodeJS](https://nodejs.org/))
+- REST API Data Endpoint: [JokeAPI](https://sv443.net/jokeapi/v2/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Other important services & dependency libraries of the application include:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [axios](https://www.npmjs.com/package/axios): An http client to fetch urls and make api calls or requests within the application.
+- [swr](https://swr.vercel.app/): To fetch and revalidate data on the client-side of the application while keeping the UI reactive.
+- [react-transition-group](https://reactcommunity.org/react-transition-group): An animation library from which PrimeReact components use for smooth transitions.
 
-## Deploy on Vercel
+### Directives
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The application is organized from the root(`.`) as follows:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `./page/` folder(integrated by NextJS) contains the UI Views for the application with the exception of the `./page/api/\*` sub-folder.
+- `./page/api` sub-folder(integrated by NextJS) contains serverless and NodeJS backend code for the application. All of the request to the Marvel Comic API endpoint are found in this subfolder.
+- `./assets/` folder contains pre-defined data selections to be used by the appliction.
+- `./components/` folder contains coded UI layouts to be used through out the application.
+- `./styles/` folder(integrated by NextJS) contains the global style of the application accessible by all components.
+- `./public/` folder(integrated by NextJS) contains global files to be shared through the application. You can store static images here.
+
+Absolute imports to any of these folders through the application are configured in the `jsconfig.json` file in the root.
+
+The application's code source contains inline comments which will provide further help and guidance on how an important piece of module or component works. The code quality was tested with `JSLint`.
+
+### Deployment
+
+You may eventually want to deploy a live customized version of your app in a future instance. [Vercel](https://vercel.com/) platform is suitably built fo the deployment of NextJS application and more as they have an integrated environment to deploy directly from your own [Github Repository](https://github.com/new).
+
+## Support
+
+If any worries, bugs or problem arises in the future, you can create an issue, contribute or contact me via:
+
+- [carlnolan@lootyclub.com](mailto:carlnolan@lootyclub.com)
+
+## Roadmap
+
+No planned schedule for this project. But might do some alternative functionality updates with time.
+
+## License
+
+###
+
+![GitHub last commit](https://img.shields.io/github/last-commit/cvrlnolan/thejokes) ![GitHub contributors](https://img.shields.io/github/contributors/cvrlnolan/thejokes) ![GitHub issues](https://img.shields.io/github/issues/cvrlnolan/thejokes) ![GitHub repo size](https://img.shields.io/github/repo-size/cvrlnolan/thejokes)
+
+![GitHub followers](https://img.shields.io/github/followers/cvrlnolan?style=social) ![Twitter Follow](https://img.shields.io/twitter/follow/realcarlnolan?style=social)
