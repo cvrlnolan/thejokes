@@ -1,6 +1,7 @@
 # The Jokes
 
 A Next.js application that fetches and displays data from the public [JokeAPI](https://sv443.net/jokeapi/v2/) service provider.
+Live demo available at: https://thejokes.vercel.app
 
 ## Description
 
