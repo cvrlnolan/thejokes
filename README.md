@@ -65,6 +65,8 @@ No planned schedule for this project. But might do some alternative functionalit
 
 ## License
 
+![GitHub](https://img.shields.io/github/license/cvrlnolan/thejokes)
+
 ###
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/cvrlnolan/thejokes) ![GitHub contributors](https://img.shields.io/github/contributors/cvrlnolan/thejokes) ![GitHub issues](https://img.shields.io/github/issues/cvrlnolan/thejokes) ![GitHub repo size](https://img.shields.io/github/repo-size/cvrlnolan/thejokes)
