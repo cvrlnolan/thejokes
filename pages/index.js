@@ -70,11 +70,11 @@ export default function Home() {
       moreJokes.forEach((joke) => {
         jokes.push(joke)
       })
+      setRange(range + 10)
     } catch (e) {
       console.log(e.message)
       setLoading(false)
     } finally {
-      setRange(range + 10)
       setLoading(false)
     }
   }

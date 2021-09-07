@@ -72,7 +72,10 @@ const Navbar = ({ children }) => {
                     model={navItems}
                     start={start}
                     end={end}
-                    style={{ width: "100vw" }}
+                    style={{ 
+                        width: "100vw",
+                        borderRadius: 0
+                    }}
                 />
             </div>
             <div className="p-d-flex p-p-5 p-flex-column">

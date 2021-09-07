@@ -48,7 +48,7 @@ The application is organized from the root(`.`) as follows:
 
 Absolute imports to any of these folders through the application are configured in the `jsconfig.json` file in the root.
 
-The application's code source contains inline comments which will provide further help and guidance on how an important piece of module or component works. The code quality was tested with `JSLint`.
+The application's code source contains inline comments which will provide further help and guidance on how an important piece of module or component works. The code quality was tested with [JSLint](https://www.jslint.com/).
 
 ### Deployment
 
