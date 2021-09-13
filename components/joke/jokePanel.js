@@ -1,3 +1,4 @@
+import React from "react"
 import { Panel } from "primereact/panel"
 
 const JokePanel = ({ joke }) => {
